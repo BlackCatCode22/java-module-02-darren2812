@@ -1,5 +1,5 @@
 // MadnessWithMethods.java
-// dD 09/02/25
+// dD 09/02/25 last edited 09/07/25
 
 // importing the scanner
 import java.util.Scanner;
@@ -18,6 +18,7 @@ public class MadnessWithMethods {
         int num2 = input.nextInt();
         // calls addTwoInts method
         addTwoInts(num1, num2);
+        compareTwoInts(num1, num2);
     }
 
     static void helloThere(String aName){
@@ -29,4 +30,18 @@ public class MadnessWithMethods {
         // concatenates string and prints the sum of two numbers
         System.out.println("The sum of the two numbers is " + (first + second));
     }
+
+     static void compareTwoInts(int a, int b){
+        // compares two integers and prints larger one
+        if (a > b){
+            System.out.println("The first number is larger than the second.");
+        }
+        else if(b > a){
+            System.out.println("The second number is larger than the first.");
+        }
+        else{
+            System.out.println("The two numbers are equal.");
+        }
+    }
 }
+
